@@ -1,0 +1,678 @@
+/*_________________________Fuentes generales y exportacion de fuentes_________________________*/
+@font-face {
+    font-family: "Oswald";
+    src: url(../fuentes/Oswald[wght].ttf);
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+  background-image:url(../img/6789_VM_MagdalenadeKino.jpg);
+  background-size: 100vw 100vh;
+  background-attachment: fixed;
+}
+
+ .fondoBuscarDatos{
+  background-image:url(../img/IMG_20190715_110649.jpg);
+  background-size: 100vw 100vh;
+  background-attachment: fixed;
+}
+
+
+img{
+  display: block;
+  max-width: 100%;
+  border-radius: 50%;
+}
+
+.form2{
+  display: contents;
+}
+
+input:focus {
+  box-shadow: 0 2px 2px rgba(51, 84, 215, 0.075)inset, 0 0 12px rgba(51, 84, 215,0.8);
+  outline: 0 none;
+}
+
+textarea:focus {
+  box-shadow: 0 2px 2px rgba(51, 84, 215, 0.075)inset, 0 0 12px rgba(51, 84, 215,0.8);
+  outline: 0 none;
+}
+
+
+/*_________________________________________Encabezado de págiba___________________________________________________*/
+.contenerdorEncabezado{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.titlePrincipal{
+  text-align: center;
+  font-weight: 100;
+  font-size: 1.9em;
+  margin: 3px;
+  font-weight: bold;
+  background: rgba(0,0,0,.70);
+  border-radius: 7px;
+  font-family: 'Oswald', sans-serif;
+  color:white;
+}
+
+.subtitulo{
+  font-size: 1.5em;
+  margin-bottom: 180px;
+  text-align: center;
+  background: rgba(0,0,0,.70);
+  border-radius: 7px;
+  font-family: 'Oswald', sans-serif;
+  color:white;
+  margin-right: 70px;
+  margin-left: 65px;
+}
+
+.iconoM{
+  width: 170px;
+  height: 170px;
+  object-fit: cover;
+  margin: auto;
+  margin-bottom: 70px;
+  padding-top: -90px;
+  padding-bottom: 20px;
+  padding-bottom: 10px;
+  background: rgba(0,0,0,.00);
+  border-radius: 7px;
+  margin-left: 22.5%;
+}
+
+.container{
+  width: 100%;
+  margin: auto;
+
+}
+
+.container__flex{
+display: flex;
+flex-wrap: wrap;
+justify-content:space-between;
+align-items: center;
+}
+
+
+#imagen3{
+  width: 170px;
+  height: 170px;
+  object-fit: cover;
+  margin: auto;
+  margin-bottom: 30px;
+  padding-top: -90px;
+  padding-bottom: 20px;
+  padding-bottom: 10px;
+
+}
+
+/*_______________Para la fecha y el reloj______________*/
+#fecha{
+  float: right;
+  width: 230px;
+  height: 130px;
+  margin: 10px 4%;
+  box-sizing: border-box;
+}
+
+.wrap{
+  width: 150%;
+  padding: 74px;
+  max-width: 1000px;
+  margin: -30px -10px;
+  float: right;
+  display: block;
+  margin-bottom: 110px;
+}
+
+.widget{
+  width: 60%;
+  margin: -3em;
+  float: right;
+}
+
+.widget p {
+  display: inline-block;
+  line-height: 1em;
+}
+
+.fecha{
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    font-size: 1em;
+    margin-bottom: 0.3125rem;
+    background: rgba(0,0,0,.70);
+    border-radius: 7px;
+    padding: 10px;
+    width: 73.5%;
+    color:white;
+}
+
+.reloj{
+  font-family: 'Oswald', sans-serif;
+  width: 73.5%;
+  padding: 10px;
+  font-size: 1em;
+  text-align: center;
+  background: rgba(0,0,0,.70);
+  border-radius: 7px;
+  color:white;
+}
+
+.reloj .cajaSegundos{
+    display: inline-table;
+}
+
+.reloj .segundos, .reloj .ampm{
+  font-size: 1rem;
+  display: contents;
+}
+
+/*__________________________________________________Cuerpo de página____________________________________________________*/
+form{
+  width: 85%;
+  margin: auto;
+  background: rgba(0,0,0,.50);
+  padding: 10px 20px;
+  box-sizing: border-box;
+  margin-top: -80px;
+  margin-bottom: 30px;
+  border-radius: 7px;
+  font-family: 'Oswald', sans-serif;
+}
+
+.formMostrarDatos{
+  width: 75%;
+  margin-top: 30px;
+}
+
+h2{
+  color: white;
+  text-align: center;
+  margin: 0;
+  font-size: 23px;
+  margin-bottom: 20px;
+}
+
+.h2_Actualizar{
+  font-size: 33px;
+}
+
+.formulario__label{
+    font-size: 1.2em;
+    color: white;
+}
+
+.formulario__label_excel{
+  font-size: 20px;
+}
+
+.btnCerrar{
+  border-radius: 7%;
+  cursor: pointer;
+  font-size: 1em;
+  font-family: 'Oswald', sans-serif;
+  background: white;
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  background: rgba(  117, 139, 227 , .85);
+  width: 100px;
+  padding: 5px;
+  margin: -1670px auto;
+  display: block;
+  margin-right: 10px;
+  text-align: center;
+}
+
+.btnCerrar:hover{
+  background: rgba(11, 19, 59,.85);
+  color:white;
+}
+
+.derecha{
+   float:right;
+   padding-top: 20px;
+}
+
+input, textarea{
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 7px;
+  box-sizing: border-box;
+  font-size: 17px;
+  border: none;
+}
+
+textarea{
+  min-height: 100px;
+  max-height: 200px;
+  max-width: 100%;
+  min-width: 100%;
+}
+
+select{
+  width: 20%;
+  margin-bottom: 5px;
+  padding: 5px;
+  box-sizing: border-box;
+  font-size: 13.5px;
+  border: none;
+  font-family: 'Oswald', sans-serif;
+}
+
+#idBtn{
+  border-radius: 7%;
+  cursor: pointer;
+  font-size: 1em;
+  font-family: 'Oswald', sans-serif;
+  background: white;
+  color: black;
+  font-weight: bold;
+  background: rgba(240, 240, 246,.85);
+
+}
+
+#idBtn:hover{
+  background: rgba(11, 19, 59,.85);
+  color:white;
+}
+
+#idBtnUbicacion{
+    border-radius: 7%;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-family: 'Oswald', sans-serif;
+    background: white;
+    color: black;
+    font-weight: bold;
+    background-color:  white;
+    padding-left: 3px;
+    padding-top: 2px;
+}
+
+#idBtn:hover{
+  cursor: pointer;
+}
+
+#idBtnUbicacion:hover{
+  background: rgba(11, 19, 59,.85);
+  color:white;
+}
+
+#formulario__btnn{
+  border-radius: 7%;
+  cursor: pointer;
+  font-size: 1em;
+  font-family: 'Oswald', sans-serif;
+  background: white;
+  color: black;
+  background: rgba(240, 240, 246,.85);
+}
+
+#formulario__btn{
+  border-radius: 7%;
+  cursor: pointer;
+  font-size: 1em;
+  font-family: 'Oswald', sans-serif;
+  background: white;
+  color: #147843;
+  background: rgba(240, 240, 246,.85);
+}
+
+
+#formulario__btn:hover{
+  background: rgba(11, 19, 59,.85);
+  color:white;
+}
+
+#formulario__btnn:hover{
+  background: rgba(11, 19, 59,.85);
+  color:white;
+}
+
+#formulario__btn_delete{
+  border-radius: 7%;
+  cursor: pointer;
+  font-size: 1em;
+  font-family: 'Oswald', sans-serif;
+  background: white;
+  color: black;
+  background: rgba(240, 240, 246,.85);
+}
+
+#formulario__btn_delete:hover{
+  background: rgba(11, 19, 59,.85);
+  color:white;
+}
+
+.tam{
+  width: 140px;
+  display: block;
+  text-align: center;
+  padding: 10px;
+  margin: 10px auto;
+}
+
+.decoration{
+  text-decoration: none;
+}
+
+
+.tamBtnExcel{
+  width: 160px;
+  display: block;
+  text-align: center;
+  padding: 10px;
+  margin: 10px auto;
+  font-weight: bold;
+}
+
+/*_____________________________________________Icono de Mensage de ayuda______________________________________*/
+.help-tip{
+	position: absolute;
+	top: 146.5% auto;
+  margin-top:-26px;
+	right: 64% auto;
+  margin-left: 100px;
+	text-align: center;
+	background-color:  #21b4b9;
+	border-radius: 50%;
+	width: 24px;
+	height: 24px;
+	font-size: 14px;
+	line-height: 26px;
+	cursor: default;
+}
+
+.help-tip:before{
+	content:'?';
+	font-weight: bold;
+	color:#fff;
+}
+
+.help-tip:hover p{
+	display:block;
+	transform-origin: 100% 0%;
+
+	-webkit-animation: fadeIn 0.3s ease-in-out;
+	animation: fadeIn 0.3s ease-in-out;
+
+}
+
+.help-tip p{
+	display: none;
+	text-align: left;
+	background-color: #1E2021;
+	padding: 20px;
+	width: 250px;
+	position: absolute;
+	border-radius: 3px;
+	box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+	right: -4px;
+	color: #FFF;
+	font-size: 13px;
+	line-height: 1.4;
+}
+
+.help-tip p:before{
+	position: absolute;
+	content: '';
+	width:0;
+	height: 0;
+	border:6px solid transparent;
+	border-bottom-color:#1E2021;
+	right:10px;
+	top:-12px;
+}
+
+.help-tip p:after{
+	width:100%;
+	height:40px;
+	content:'';
+	position: absolute;
+	top:-40px;
+	left:0;
+}
+
+
+/*_____________________________Ubicacion Icono de ayuda_____________________*/
+.help-tip-ubicacion{
+	position: absolute;
+  top: 96.5% auto;
+  margin-top:-30px;
+  right: 98% auto;
+  margin-left: 150px;
+	text-align: center;
+	background-color:  #21b4b9;
+	border-radius: 50%;
+	width: 24px;
+	height: 24px;
+	font-size: 14px;
+	line-height: 26px;
+	cursor: default;
+}
+
+.help-tip-ubicacion:before{
+	content:'?';
+	font-weight: bold;
+	color:#fff;
+}
+
+.help-tip-ubicacion:hover p{
+	display:block;
+	transform-origin: 100% 0%;
+
+	-webkit-animation: fadeIn 0.3s ease-in-out;
+	animation: fadeIn 0.3s ease-in-out;
+
+}
+
+.help-tip-ubicacion p{
+	display: none;
+	text-align: left;
+	background-color: #1E2021;
+	padding: 20px;
+	width: 250px;
+	position: absolute;
+	border-radius: 3px;
+	box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+	right: -4px;
+	color: #FFF;
+	font-size: 13px;
+	line-height: 1.4;
+}
+
+.help-tip-ubicacion p:before{
+	position: absolute;
+	content: '';
+	width:0;
+	height: 0;
+	border:6px solid transparent;
+	border-bottom-color:#1E2021;
+	right:10px;
+	top:-12px;
+}
+
+.help-tip-ubicacion p:after{
+	width:100%;
+	height:40px;
+	content:'';
+	position: absolute;
+	top:-40px;
+	left:0;
+}
+
+
+/* CSS animation */
+
+@-webkit-keyframes fadeIn {
+	0% {
+		opacity:0;
+		transform: scale(0.6);
+	}
+
+	100% {
+		opacity:100%;
+		transform: scale(1);
+	}
+}
+
+@keyframes fadeIn {
+	0% { opacity:0; }
+	100% { opacity:100%; }
+}
+
+/*________________________________PIE DE PÁGINA____________________________*/
+.main_footer{/*estilos en general para todo el pie de página*/
+  background: rgba(0,0,0,.90);
+  color: white;
+  padding: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: .9em;
+  text-align: center;
+}
+
+.main_footer [class*="icon-"]{/*estilos para los iconos de pie de página*/
+  color: white;
+  text-decoration: none;
+}
+
+.main_footer [class*="icon-"]:before{/*estilos para los iconos de pie de página*/
+  position: relative;
+  top: 3px;
+  right: 5px;
+}
+
+.copy{
+  margin: auto;
+  margin-top: 15px;
+  font-family: 'Oswald', sans-serif;
+}
+
+#cursorExcel{
+    cursor: pointer;
+}
+
+.column--33{
+  width: 33%;
+}
+
+.column--50-25{
+  width: 49%;
+}
+
+.column_title{
+  font-size: 2.0em;
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+  color: white;
+}
+
+.column_txt{
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+}
+
+
+/*_______________________________________________Haciendo responsive____________________________________________*/
+@media(max-width:580px){
+form{
+  width: 100%;
+}
+
+.subtitulo{
+  font-size: 1.5em;
+  margin-bottom: 180px;
+  margin-left: 40px;
+  text-align: center;
+  background: rgba(0,0,0,.65);
+  border-radius: 7px;
+  font-family: 'Oswald', sans-serif;
+  color:white;
+}
+
+}
+
+@media(max-width:545px){
+.fecha{
+    background: rgba(0,0,0,0.0);
+    color:white;
+}
+
+.reloj{
+  background: rgba(0,0,0,.0);
+  color:white;
+}
+
+
+
+}
+
+@media(max-width:730px){
+
+  .subtitulo{
+    font-size: 1.5em;
+    margin-bottom: 180px;
+    text-align: center;
+    background: rgba(0,0,0,.0);
+    border-radius: 7px;
+    font-family: 'Oswald', sans-serif;
+    color:white;
+  }
+
+}
+
+@media(max-width:640px){
+  .subtitulo{
+    margin-left: 100px;
+    text-align: center;
+    background: rgba(0,0,0,.0);
+    color:white;
+  }
+}
+
+/*________________hel-tip________________*/
+@media(max-width:580px){
+
+  .help-tip-ubicacion{
+    margin-left: 190px;
+  }
+
+  .help-tip{
+    margin-left: 155px;
+  }
+
+}
+
+@media(max-width:1125px){
+  .help-tip{
+    margin-left: 130px;
+  }
+
+}
+
+@media(max-width:892px){
+  .help-tip{
+    margin-left: 155px;
+  }
+
+}
+
+@media(max-width:531px){
+
+  .help-tip{
+    margin-left: 185px;
+  }
+
+}

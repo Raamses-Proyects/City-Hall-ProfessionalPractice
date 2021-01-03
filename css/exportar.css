@@ -1,0 +1,110 @@
+@font-face {
+    font-family: "Oswald";
+    src: url(../fuentes/Oswald[wght].ttf);
+}
+
+body{
+  background-image:url(../img/relog.jpg);
+  background-size: 100vw 100vh;
+  background-attachment: fixed;
+  margin: 0;
+}
+
+form{
+  width: 30%;
+  margin: auto;
+  background: rgba(0,0,0,.70);
+  padding: 10px 20px;
+  box-sizing: border-box;
+  margin-top: 30px;
+  border-radius: 10px;
+}
+
+/*Para los formularios de Exportar a Excel, buscar y actualizar y eliminar*/
+.formExcel{
+  width: 30%;
+  margin: auto;
+  background: rgba( 14, 91, 16 ,0.8);
+  padding: 10px 20px;
+  box-sizing: border-box;
+  margin-top: 30px;
+  border-radius: 10px;
+}
+
+
+.forms{
+  width: 70%;
+}
+
+.buscar{
+  background: rgba( 91, 11, 112 ,0.8);
+}
+
+.eliminar{
+  background: rgba(249, 38, 5 ,0.8);
+}
+
+.form_Actualizar{
+  width: 85%;
+}
+
+
+h2{
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  font-size: 30px;
+  margin-bottom: 20px;
+  font-family: "Oswald";
+}
+
+.colorBlack{
+  color: black;
+}
+
+.formulario__label{
+  font-size: 1.2em;
+  color:white;
+  font-family: "Oswald";
+}
+
+input{
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 7px;
+  box-sizing: border-box;
+  border: none;
+}
+
+
+
+.ad{/*subclase de btnCerrar*/
+  background: rgba(240, 240, 246,.85);
+  width: 100px;
+  padding: 5px;
+  margin: -230px auto;
+  display: block;
+  margin-right: 15px;
+  text-align: center;
+}
+
+.btnCerrar:hover{
+  background: rgba(11, 19, 59,.85);
+  color:white;
+}
+
+.derecha{
+   float:right;
+   padding-top: 20px;
+}
+
+#formulario__btn:hover{
+  background: rgba(11, 19, 59,.85);
+  color:white;
+}
+
+
+@media(max-width:580px){ /*de los 580px para abajo de cumple la condicional*/
+form{
+  width: 100%;
+}
