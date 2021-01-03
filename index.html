@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel = "stylesheet" href="css/estilos.css">
+    <link rel = "stylesheet" href="css/fonts.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.1.62/jquery.inputmask.bundle.js"></script>
+
+  </head>
+  <body>
+
+    <header>
+
+      <section class = "contenerdorEncabezado">
+
+        <h1 class = "titlePrincipal">Ayuntamiento de Magdalena </h1>
+
+        <div class = "container container__flex">
+
+            <div class = "column column--33">
+              <img src = "img/EscudoMagdalena.png" alt = ""  class = "iconoM">
+            </div>
+
+
+            <div class = "column column--33">
+              <p class = "subtitulo">Dirección de desarrollo Económino </p>
+            </div>
+
+
+            <div class = "column column--33">
+              <section class="wrap">
+                <div class="widget">
+
+                  <div class="fecha">
+                    <p id = "diaSemana" class = "diaSemana"> </p>
+                    <p id = "dia" class = "dia"> </p>
+                    <p>de </p>
+                    <p id = "mes" class = "mes"> </p>
+                    <p>del </p>
+                    <p id = "year" class = "year"> </p>
+                  </div>
+
+                  <div class="reloj">
+                    <p id = "horas" class = "horas"></p>
+                    <p>: </p>
+                    <p id = "minuto" class = "minuto"></p>
+                    <p>:</p>
+                      <div class="cajaSegundos">
+
+                        <p id = "segundos" class = "segundos"> </p>
+                        <p id = "ampm" class = "ampm"> </p>
+                      </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+
+        </div>
+
+      </section>
+
+    </header>
+
+
+    <main>
+
+      <form action="php/ingresarDatos.php" onclick="habilitar()" method="post">
+        <div id="imagen3" class="tamaño">
+            <img src = "img/mag.jpg" width="170px">
+        </div>
+        <h2>El presente cuestionario tiene </h2>
+
+        <label class = "formulario__label">Nombre de empresa:</label>
+        <input type="text" name="txtNombreEmpresa" placeholder="Empresa/negocio" value="" maxlength=150 >
+
+        <div class = "container container__flex">
+          <div class = "column column--50-25">
+            <label class = "formulario__label">Dirección: </label>
+            <div class="help-tip-ubicacion">
+              <p>Si esta en la ubicación del trabajo le recomendamos utilizar la ubicación automatica.</p>
+            </div>
+
+            <a href="IndexOpen.html"  target="_blank" class = "tamUbicacion" id = "idBtnUbicacion" title = "Ir a ubicación">Ubicación </a>
+
+          </div>
+        </div>
+
+        <div class = "container container__flex">
+
+            <div class = "column column--50-25">
+              <input type = "text" name = "txtCalle" placeholder = "Ingresar la calle" value="" maxlength=25>
+            </div>
+            <div class = "column column--50-25">
+              <input type = "text" name = "txtNumero" placeholder = "Ingresar el número" value=""
+               maxlength=5 id = "Num">
+            </div>
+            <div class = "column column--50-25">
+              <input type = "text" name = "txtColonia" placeholder = "Ingresar la colonia" value="" maxlength=40>
+            </div>
+
+            <div class = "column column--50-25">
+              <input type = "text" name = "txtReferencia" placeholder = "Ingresar referencia" value="" maxlength=50>
+            </div>
+
+        </div>
+
+
+        <label class = "formulario__label">Teléfono/Celular:</label>
+
+        <select id = "IdListaTelefonos" class="letraCombo" name="">
+          <option value="telefono">Teléfono </option>
+          <option value="celular">Celular </option>
+          <option value="ambos">Ambos</option>
+        </select><br>
+
+        <div class = "container container__flex">
+
+        <div class="column column--50-25">
+          <input type="text" name="txtTelefono" placeholder="Teléfono" value="" id="Tel" disabled = true maxlength=14><!--onpaste = "return false" -->
+        </div>
+
+        <div class="column column--50-25">
+          <input type="text" name="txtCelular" placeholder="Celular" value="" id="Cel" disabled = true maxlength=14>
+        </div>
+
+        </div>
+
+        <label class = "formulario__label">Página web:</label>
+        <input type="url" name="txtPagWeb" placeholder="Web empresarial/red social de trabajo" value="" maxlength=100>
+
+        <label class = "formulario__label">Giro:</label>
+        <select id = "IdLista" class="letraCombo" name="comboLista">
+          <option value="comercio">Comercio</option>
+          <option value="servicios">Servicios</option>
+          <option value="industria">Industria</option>
+          <option value="minero">Minero</option>
+          <option value="educativo">Educativo</option>
+          <option value="otro">Otro</option>
+        </select><br>
+        <input type="text" name="txtEspecificar" placeholder="Especificar" value="" disabled = true id = "IdEspecificar" maxlength=50>
+
+      <div class = "container container__flex">
+
+      <div class = "column column--50-25">
+        <label class = "formulario__label ">Razón social:</label>
+        <div class="help-tip">
+          <p>La razon social es la denominación por la cual se conoce colectivamente a una empresa. Se trata de un nombre oficial y legal.</p>
+        </div>
+        <input type="text" name="txtRazonSocial" placeholder="Razón social" value="" maxlength=50>
+      </div>
+
+      <div class = "column column--50-25">
+        <label class = "formulario__label">Nombre del propietario:</label>
+        <input type="text" name="txtNomPropietario" placeholder="Ingrese nombre de propietario" value="" maxlength=40>
+      </div>
+
+      <div class = "column column--50-25">
+        <label class = "formulario__label">Nombre del representante:</label>
+        <input type = "text" name = "txtNomRepresentante" placeholder = "Ingrese nombre de representante" value="" maxlength=40>
+      </div>
+
+      <div class = "column column--50-25">
+        <label class = "formulario__label">Número de empleados:</label>
+        <input type = "text" name = "txtNumEmpleados" placeholder = "Ingrese el número de empleados" value="" id = "NumEmpleados" maxlength=5>
+
+      </div>
+
+      </div>
+        <label class = "formulario__label">Descripción de la actividad que se realiza en su empresa o negocio: </label>
+        <textarea name="textActividadEmpresa" placeholder="Ingresar las actividades realizadas" maxlength=255></textarea>
+
+        <label class = "formulario__label">Que tipo de cursos, capacitación, o apoyo sugiere a Desarrollo Económico: </label>
+        <textarea name="textASugerenciaDEC" placeholder="Brindamos capacitaciones a las empresas, si tiene alguna sugerencia escríbala" maxlength=255></textarea>
+
+        <label class = "formulario__label">Comentarios: </label>
+        <textarea name="textAComentarios" placeholder="Nos interesa su opinión" maxlength=255></textarea>
+        <input type="submit" value="Enviar" id = "idBtn" name = "buscador" class="tam" title = "Enviar datos">
+
+      </form>
+
+    </main>
+
+
+    <footer class = "main_footer">
+
+      <div class = "container container__flex">
+
+  <div class = "column column--50-25">
+    <h2 class = "column_title">¿Por que visitarnos? </h2>
+    <p class = "column_txt">Resolvemos de manera ágil las necesidades de nuestros clientes, gracias al excelente
+      desempeño de nuestros profesionales y la calidad garantizada en los servicios que brindamos.
+    </p>
+    <p class = "column_txt"> <a onclick="window.location = 'login.html'"  target="_blank" class = "icon-table" id = "cursorExcel" title = "Exportar datos a Excel y mas">Exportar a Excel </a> </p>
+    <p class = "copy">© 2019  Ayuntamiento de Magdalena de Kino | Todos los derechos reservados. </p>
+  </div>
+
+  <div class = "column column--50-25">
+    <h2 class = "column_title">Contáctenos </h2>
+    <p class = "column_txt">Magdalena de Kino - 84160 </p>
+      <p class = "column_txt"><a href = "https://www.facebook.com/AyuntamientoMagdalena/"  target="_blank" class = "icon-facebook" title = "Siguenos en Facebook">Facebook</a> </p>
+    <p class = "column_txt">Teléfono: 32-2367 </p>
+    <p class = "column_txt">AyuntamientoMagdalena@gmail.com </p>
+  </div>
+
+
+</div>
+
+</footer>
+
+  <script src="js/fecha.js"> </script>
+  <script src="js/detalles.js"> </script>
+  <script src="js/prueba.js"> </script>
+
+  </body>
+</html>
